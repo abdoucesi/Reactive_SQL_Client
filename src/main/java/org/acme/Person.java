@@ -9,6 +9,7 @@ import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
 @Entity
 public class Person extends PanacheEntity {
+
 	@Column(name="first_name")
     public String firstName;
 
@@ -16,4 +17,5 @@ public class Person extends PanacheEntity {
     public String lastName;
 
     public String salutation;
+    
 }
