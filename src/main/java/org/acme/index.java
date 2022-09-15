@@ -5,12 +5,17 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/hello")
-public class GreetingResource {
+import org.eclipse.microprofile.config.inject.ConfigProperty;
 
+
+
+
+@Path("/index")
+public class index {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    public String hello() {
-        return "Hello de Reactive sql client";
+    public String hello(){
+        return "je fonctionne";
     }
+
 }
