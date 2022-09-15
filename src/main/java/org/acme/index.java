@@ -12,10 +12,18 @@ import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 @Path("/index")
 public class index {
+
+    @ConfigProperty(name = "app.var")
+    String var;
+
+
+
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello(){
-        return "je fonctionne";
+        return var;
     }
+
+
 
 }
