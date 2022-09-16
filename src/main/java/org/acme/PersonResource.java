@@ -28,7 +28,7 @@ import io.quarkus.panache.common.Sort;
 public class PersonResource {
 
     @GET
-    public List<Person> getALL() throws Exception{
+    public List<Person> getAL() throws Exception{
         return Person.findAll(Sort.ascending("last_name")).list();
     }
 
@@ -68,7 +68,7 @@ public class PersonResource {
     public Response delete(@PathParam Long id) {
         Person entity = Person.findById(id);
         if (entity == null) {
-            throw new WebApplicationException("Person with id of " + id + " does not exist.", 404);
+            throw new WebApplicationException("La personne avec cet " + id + " n'existe pas.", 404);
         }
         entity.delete();
         return Response.status(204).build();

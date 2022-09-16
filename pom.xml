@@ -45,10 +45,8 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-arc</artifactId>
     </dependency>
-
+<!--////////////////////////////////////////////////////////////////////////////////-->
     <!-- Hibernate ORM specific dependencies -->
-
-
     <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-panache</artifactId>
@@ -64,11 +62,11 @@
 
 
 <!-- JDBC driver dependencies -->
-<dependency>
-    <groupId>io.quarkus</groupId>
-    <artifactId>quarkus-jdbc-postgresql</artifactId>
-</dependency>
- 
+    <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-jdbc-postgresql</artifactId>
+    </dependency>
+<!--////////////////////////////////////////////////////////////////////////////////////-->
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
