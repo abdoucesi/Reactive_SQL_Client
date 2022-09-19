@@ -1,7 +1,7 @@
-15:26:22 INFO  [io.quarkus]] (Quarkus Main Thread) code-with-quarkus 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.12.2.Final) started in 0.448s. Listening on: http://localhost:8080
-15:26:22 INFO  [io.quarkus]] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
-15:26:22 INFO  [io.quarkus]] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, jdbc-h2, jdbc-postgresql, narayana-jta, reactive-pg-client, resteasy, resteasy-jackson, resteasy-mutiny, smallrye-context-propagation, vertx]
-15:26:22 INFO  [io.qu.de.de.RuntimeUpdatesProcessor]] (vert.x-worker-thread-0) Live reload total time: 0.600s 
-15:26:22 INFO  [or.ac.PersonResource]] (executor-thread-0) Le getAll marche
-15:27:16 INFO  [io.qu.de.de.RuntimeUpdatesProcessor]] (vert.x-worker-thread-0) Restarting quarkus due to changes in PersonResource.class.
-15:27:16 INFO  [io.quarkus]] (Quarkus Main Thread) code-with-quarkus stopped in 0.005s
+15:29:55 INFO  [io.quarkus]] (Quarkus Main Thread) code-with-quarkus 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.12.2.Final) started in 0.374s. Listening on: http://localhost:8080
+15:29:55 INFO  [io.quarkus]] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+15:29:55 INFO  [io.quarkus]] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, jdbc-h2, jdbc-postgresql, narayana-jta, reactive-pg-client, resteasy, resteasy-jackson, resteasy-mutiny, smallrye-context-propagation, vertx]
+15:29:55 INFO  [io.qu.de.de.RuntimeUpdatesProcessor]] (vert.x-worker-thread-0) Live reload total time: 0.496s 
+15:29:55 INFO  [or.ac.PersonResource]] (executor-thread-0) Le getAll marche
+15:38:48 INFO  [io.qu.de.de.RuntimeUpdatesProcessor]] (vert.x-worker-thread-0) Restarting quarkus due to changes in PersonResource.class.
+15:38:48 INFO  [io.quarkus]] (Quarkus Main Thread) code-with-quarkus stopped in 0.006s

@@ -5,6 +5,7 @@ package org.acme;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -54,9 +55,12 @@ public class PersonResource {
         
         for (int i = 0 ; i< allPersons.size(); i++){
 
-            List<String> Names = new ArrayList<>(Arrays.asList());
+            List<String> Names = new ArrayList<>();
+
             Names.add(allPersons.get(i).firstName);
+
             FileWriter writer = new FileWriter("C:/Users/hamicheab/Documents/output.txt"); 
+            
             for(String str: Names) {
                 writer.write(str + System.lineSeparator());
             }

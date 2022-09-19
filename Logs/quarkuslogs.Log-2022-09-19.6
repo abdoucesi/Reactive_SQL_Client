@@ -1,45 +1,7 @@
-17:03:15 INFO  [io.quarkus]] (Quarkus Main Thread) code-with-quarkus 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.12.2.Final) started in 2.662s. Listening on: http://localhost:8080
-17:03:15 INFO  [io.quarkus]] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
-17:03:15 INFO  [io.quarkus]] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, jdbc-h2, jdbc-postgresql, narayana-jta, reactive-pg-client, resteasy, resteasy-jackson, resteasy-mutiny, smallrye-context-propagation, vertx]
-17:03:19 ERROR [io.qu.ve.ht.ru.QuarkusErrorHandler]] (executor-thread-0) HTTP Request to /Person failed, error id: 88eaffa0-eb92-44fa-8359-3ba0f43ac70a-1: java.lang.Error: Unresolved compilation problem: 
-	The type com.sun.tools.javac.util.Names is not accessible
-
-	at org.acme.PersonResource.<init>(PersonResource.java:29)
-	at org.acme.PersonResource_Subclass.<init>(Unknown Source)
-	at org.acme.PersonResource_Bean.create(Unknown Source)
-	at org.acme.PersonResource_Bean.create(Unknown Source)
-	at io.quarkus.arc.impl.AbstractSharedContext.createInstanceHandle(AbstractSharedContext.java:111)
-	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:35)
-	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:32)
-	at io.quarkus.arc.impl.LazyValue.get(LazyValue.java:26)
-	at io.quarkus.arc.impl.ComputingCache.computeIfAbsent(ComputingCache.java:69)
-	at io.quarkus.arc.impl.AbstractSharedContext.get(AbstractSharedContext.java:32)
-	at org.acme.PersonResource_Bean.get(Unknown Source)
-	at org.acme.PersonResource_Bean.get(Unknown Source)
-	at io.quarkus.arc.impl.ArcContainerImpl.beanInstanceHandle(ArcContainerImpl.java:468)
-	at io.quarkus.arc.impl.ArcContainerImpl.beanInstanceHandle(ArcContainerImpl.java:481)
-	at io.quarkus.arc.impl.ArcContainerImpl$1.get(ArcContainerImpl.java:285)
-	at io.quarkus.arc.impl.ArcContainerImpl$1.get(ArcContainerImpl.java:282)
-	at io.quarkus.resteasy.common.runtime.QuarkusConstructorInjector.construct(QuarkusConstructorInjector.java:52)
-	at org.jboss.resteasy.plugins.server.resourcefactory.POJOResourceFactory.createResource(POJOResourceFactory.java:71)
-	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:401)
-	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
-	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
-	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
-	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
-	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
-	at io.quarkus.resteasy.runtime.standalone.RequestDispatcher.service(RequestDispatcher.java:73)
-	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.dispatch(VertxRequestHandler.java:151)
-	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler$1.run(VertxRequestHandler.java:91)
-	at io.quarkus.vertx.core.runtime.VertxCoreRecorder$14.runWith(VertxCoreRecorder.java:557)
-	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
-	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
-	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
-	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-
-17:04:50 INFO  [io.qu.de.de.RuntimeUpdatesProcessor]] (vert.x-worker-thread-0) Restarting quarkus due to changes in PersonResource.class.
-17:04:50 INFO  [io.quarkus]] (Quarkus Main Thread) code-with-quarkus stopped in 0.016s
+17:15:46 INFO  [io.quarkus]] (Quarkus Main Thread) code-with-quarkus 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.12.2.Final) started in 0.374s. Listening on: http://localhost:8080
+17:15:46 INFO  [io.quarkus]] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+17:15:46 INFO  [io.quarkus]] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, jdbc-h2, jdbc-postgresql, narayana-jta, reactive-pg-client, resteasy, resteasy-jackson, resteasy-mutiny, smallrye-context-propagation, vertx]
+17:15:46 INFO  [io.qu.de.de.RuntimeUpdatesProcessor]] (vert.x-worker-thread-0) Live reload total time: 0.474s 
+17:15:46 INFO  [or.ac.PersonResource]] (executor-thread-0) Le getAll marche
+17:19:38 INFO  [io.qu.de.de.RuntimeUpdatesProcessor]] (vert.x-worker-thread-0) Restarting quarkus due to changes in PersonResource.class.
+17:19:38 INFO  [io.quarkus]] (Quarkus Main Thread) code-with-quarkus stopped in 0.006s
