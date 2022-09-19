@@ -1,0 +1,5 @@
+12:26:33 INFO  [io.quarkus]] (Quarkus Main Thread) code-with-quarkus 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.12.2.Final) started in 4.302s. Listening on: http://localhost:8080
+12:26:33 INFO  [io.quarkus]] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+12:26:33 INFO  [io.quarkus]] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, jdbc-h2, jdbc-postgresql, narayana-jta, reactive-pg-client, resteasy, resteasy-jackson, resteasy-mutiny, smallrye-context-propagation, vertx]
+12:27:22 INFO  [io.qu.de.de.RuntimeUpdatesProcessor]] (vert.x-worker-thread-0) Restarting quarkus due to changes in PersonResource.class.
+12:27:22 INFO  [io.quarkus]] (Quarkus Main Thread) code-with-quarkus stopped in 0.028s

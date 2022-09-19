@@ -1,12 +1,20 @@
 package org.acme;
 
 
-import java.io.Console;
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.lang.reflect.Array;
+import java.nio.file.Files;
 
 
 import javax.ws.rs.Produces;
 import javax.ws.rs.WebApplicationException;
+
 import javax.transaction.Transactional;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -18,13 +26,14 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.arjuna.ats.internal.jdbc.drivers.modifiers.list;
+
+
 
 import org.hibernate.jdbc.Expectation;
 import org.jboss.logging.Logger;
 import org.jboss.resteasy.annotations.jaxrs.PathParam;
 
-import io.quarkus.panache.common.Sort;
+
 
 
 
@@ -36,10 +45,30 @@ public class PersonResource {
     private static final Logger LOGGER = Logger.getLogger(PersonResource.class);
 
     @GET
-    public List<Person> getAll() {
+    public List<Person> getAll() throws IOException {
         
         LOGGER.info("Le getAll marche");
-        return Person.findAll(Sort.ascending("id")).list(); 
+
+        List<Person> allPersons = Person.listAll();
+        
+        
+        for (int i = 0 ; i< allPersons.size(); i++){
+
+            List<String> Names = new ArrayList<>(Arrays.asList());
+            Names.add(allPersons.get(i).firstName);
+            FileWriter writer = new FileWriter("C:/Users/hamicheab/Documents/output.txt"); 
+            for(String str: Names) {
+                writer.write(str + System.lineSeparator());
+            }
+            writer.close();
+            
+            System.out.print(Names);
+        }
+
+        
+
+        
+        return allPersons;
         
            
     }
