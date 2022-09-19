@@ -1,0 +1,1074 @@
+2022-09-19 12:02:18,137 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.boo.cla.QuarkusClassLoader] (vert.x-worker-thread-0) Adding elements io.quarkus.bootstrap.classloading.MemoryClassPathElement@4fe17c31 to QuarkusClassLoader Quarkus Runtime ClassLoader: DEV restart no:6
+2022-09-19 12:02:18,137 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.boo.cla.QuarkusClassLoader] (vert.x-worker-thread-0) Adding elements io.quarkus.bootstrap.classloading.PathTreeClassPathElement@5cb0971d to QuarkusClassLoader Quarkus Runtime ClassLoader: DEV restart no:6
+2022-09-19 12:02:18,184 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.qua.feature] (Quarkus Main Thread) Hibernate Features Enabled
+2022-09-19 12:02:18,185 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm] (Quarkus Main Thread) List of entities found by Quarkus deployment:
+[org.acme.Person]
+2022-09-19 12:02:18,189 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.arc.impl] (Quarkus Main Thread) ArC DI container initialized [beans=56, observers=3]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.jpa.int.uti.LogHelper] (Quarkus Main Thread) PersistenceUnitInfo [
+	name: <default>
+	persistence provider classname: null
+	classloader: null
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: null
+	Transaction type: JTA
+	PU root URL: null
+	Shared Cache Mode: null
+	Validation Mode: null
+	Jar files URLs []
+	Managed classes names [
+		org.acme.Person
+		io.quarkus.hibernate.orm.panache.PanacheEntityBase
+		io.quarkus.hibernate.orm.panache.PanacheEntity]
+	Mapping files names []
+	Properties [
+		hibernate.hbm2ddl.import_files: dataBase.sql
+		hibernate.query.plan_cache_max_size: 2048
+		hibernate.default_batch_fetch_size: 16
+		hibernate.discriminator.ignore_explicit_for_joined: false
+		hibernate.hbm2ddl.charset_name: UTF-8
+		hibernate.cache.use_reference_entries: null
+		hibernate.cache.use_query_cache: null
+		hibernate.dialect: io.quarkus.hibernate.orm.runtime.dialect.QuarkusH2Dialect
+		javax.persistence.sharedCache.mode: null
+		hibernate.cache.use_second_level_cache: null
+		hibernate.id.sequence.increment_size_mismatch_strategy: null
+		hibernate.batch_fetch_style: PADDED
+		hibernate.order_by.default_null_ordering: none]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.ser.QuarkusSimplifiedIdentifierGeneratorFactory] (Quarkus Main Thread) Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.ser.QuarkusSimplifiedIdentifierGeneratorFactory] (Quarkus Main Thread) Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.ser.QuarkusSimplifiedIdentifierGeneratorFactory] (Quarkus Main Thread) Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.ser.QuarkusSimplifiedIdentifierGeneratorFactory] (Quarkus Main Thread) Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.ser.QuarkusSimplifiedIdentifierGeneratorFactory] (Quarkus Main Thread) Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.ser.QuarkusSimplifiedIdentifierGeneratorFactory] (Quarkus Main Thread) Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.ser.QuarkusSimplifiedIdentifierGeneratorFactory] (Quarkus Main Thread) Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.ser.QuarkusSimplifiedIdentifierGeneratorFactory] (Quarkus Main Thread) Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.ser.QuarkusSimplifiedIdentifierGeneratorFactory] (Quarkus Main Thread) Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.ser.QuarkusSimplifiedIdentifierGeneratorFactory] (Quarkus Main Thread) Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.ser.QuarkusSimplifiedIdentifierGeneratorFactory] (Quarkus Main Thread) Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.ser.QuarkusSimplifiedIdentifierGeneratorFactory] (Quarkus Main Thread) Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.ser.QuarkusSimplifiedIdentifierGeneratorFactory] (Quarkus Main Thread) Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.ser.QuarkusSimplifiedIdentifierGeneratorFactory] (Quarkus Main Thread) Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration boolean -> org.hibernate.type.BooleanType@3abe5761
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration boolean -> org.hibernate.type.BooleanType@3abe5761
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@3abe5761
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@45b79a29
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration true_false -> org.hibernate.type.TrueFalseType@7e5db67e
+2022-09-19 12:02:18,190 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration yes_no -> org.hibernate.type.YesNoType@59ac360a
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration byte -> org.hibernate.type.ByteType@11616701
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration byte -> org.hibernate.type.ByteType@11616701
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@11616701
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration character -> org.hibernate.type.CharacterType@68fec1d6
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration char -> org.hibernate.type.CharacterType@68fec1d6
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@68fec1d6
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration short -> org.hibernate.type.ShortType@7b0364f1
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration short -> org.hibernate.type.ShortType@7b0364f1
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.lang.Short -> org.hibernate.type.ShortType@7b0364f1
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration integer -> org.hibernate.type.IntegerType@432711fd
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration int -> org.hibernate.type.IntegerType@432711fd
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@432711fd
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration long -> org.hibernate.type.LongType@59e42ff7
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration long -> org.hibernate.type.LongType@59e42ff7
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.lang.Long -> org.hibernate.type.LongType@59e42ff7
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration float -> org.hibernate.type.FloatType@478ab56c
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration float -> org.hibernate.type.FloatType@478ab56c
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.lang.Float -> org.hibernate.type.FloatType@478ab56c
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration double -> org.hibernate.type.DoubleType@27ce7580
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration double -> org.hibernate.type.DoubleType@27ce7580
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@27ce7580
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@5c1d207d
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@5c1d207d
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration big_integer -> org.hibernate.type.BigIntegerType@247e279e
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@247e279e
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration string -> org.hibernate.type.StringType@364dc7a8
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.lang.String -> org.hibernate.type.StringType@364dc7a8
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration nstring -> org.hibernate.type.StringNVarcharType@627bc694
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@57d00c6e
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration url -> org.hibernate.type.UrlType@2c793dd
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.net.URL -> org.hibernate.type.UrlType@2c793dd
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration Duration -> org.hibernate.type.DurationType@5a6f64aa
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.time.Duration -> org.hibernate.type.DurationType@5a6f64aa
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration Instant -> org.hibernate.type.InstantType@661c5615
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.time.Instant -> org.hibernate.type.InstantType@661c5615
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@317885c4
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@317885c4
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration LocalDate -> org.hibernate.type.LocalDateType@f1fa14d
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@f1fa14d
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@2ef4de30
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@2ef4de30
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2a5c9905
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2a5c9905
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@5fff7f2f
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@5fff7f2f
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2d18a854
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2d18a854
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration date -> org.hibernate.type.DateType@2515e699
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.sql.Date -> org.hibernate.type.DateType@2515e699
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration time -> org.hibernate.type.TimeType@6bcfd78f
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.sql.Time -> org.hibernate.type.TimeType@6bcfd78f
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration timestamp -> org.hibernate.type.TimestampType@4f6dcbde
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@4f6dcbde
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.util.Date -> org.hibernate.type.TimestampType@4f6dcbde
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@275f906f
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration calendar -> org.hibernate.type.CalendarType@2d749b33
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@2d749b33
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@2d749b33
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@389242bd
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@19805d4a
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration locale -> org.hibernate.type.LocaleType@42877afd
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@42877afd
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration currency -> org.hibernate.type.CurrencyType@4ba3dc9d
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4ba3dc9d
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration timezone -> org.hibernate.type.TimeZoneType@610ee8fe
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@610ee8fe
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration class -> org.hibernate.type.ClassType@7aff9398
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.lang.Class -> org.hibernate.type.ClassType@7aff9398
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@3d65ea8
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@3d65ea8
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@56442d7b
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration binary -> org.hibernate.type.BinaryType@409b6655
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration byte[] -> org.hibernate.type.BinaryType@409b6655
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration [B -> org.hibernate.type.BinaryType@409b6655
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@467e5e8d
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@467e5e8d
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@467e5e8d
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration row_version -> org.hibernate.type.RowVersionType@77ec7bf4
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration image -> org.hibernate.type.ImageType@34af87
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration characters -> org.hibernate.type.CharArrayType@1b06d81a
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration char[] -> org.hibernate.type.CharArrayType@1b06d81a
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration [C -> org.hibernate.type.CharArrayType@1b06d81a
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@2fb867c1
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@2fb867c1
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@2fb867c1
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration text -> org.hibernate.type.TextType@3b9f8a19
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration ntext -> org.hibernate.type.NTextType@1ef2527a
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration blob -> org.hibernate.type.BlobType@33199fb6
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@33199fb6
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5f73707b
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration clob -> org.hibernate.type.ClobType@187be6ce
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@187be6ce
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration nclob -> org.hibernate.type.NClobType@14960639
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@14960639
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@6b8ddf32
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@2f398a90
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration serializable -> org.hibernate.type.SerializableType@68b3542f
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration object -> org.hibernate.type.ObjectType@4c3020ce
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@4c3020ce
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@78978ddd
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@5da72b81
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@48cd58da
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@39dc90ad
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7de11b2e
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@197ecc30
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@3bd74c4d
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.BasicTypeRegistry] (Quarkus Main Thread) Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@66d3fa62
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.boo.int.BootstrapContextImpl] (Quarkus Main Thread) Injecting Scanner [io.quarkus.hibernate.orm.runtime.boot.scan.QuarkusScanner@139eb5fd] into BootstrapContext; was [null]
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.boo.int.BootstrapContextImpl] (Quarkus Main Thread) Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@7c6ef4f2] into BootstrapContext; was [null]
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.boo.int.BootstrapContextImpl] (Quarkus Main Thread) Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@7dda6a16] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@4a38f25]
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.boo.int.BootstrapContextImpl] (Quarkus Main Thread) Injecting JPA temp ClassLoader [null] into BootstrapContext; was [null]
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.boo.int.ClassLoaderAccessImpl] (Quarkus Main Thread) ClassLoaderAccessImpl#injectTempClassLoader(null) [was null]
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.dia.Dialect] (Quarkus Main Thread) HHH000400: Using dialect: io.quarkus.hibernate.orm.runtime.dialect.QuarkusH2Dialect
+2022-09-19 12:02:18,191 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.jdb.env.int.LobCreatorBuilderImpl] (Quarkus Main Thread) HHH000422: Disabling contextual LOB creation as connection was null
+2022-09-19 12:02:18,192 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.spi.TypeConfiguration$Scope] (Quarkus Main Thread) Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@62f4e311] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@693642d9]
+2022-09-19 12:02:18,192 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.boo.mod.sou.int.ann.AnnotationMetadataSourceProcessorImpl] (Quarkus Main Thread) Encountered a non-categorized annotated class [io.quarkus.hibernate.orm.panache.PanacheEntityBase]; ignoring
+2022-09-19 12:02:18,192 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.boo.mod.rel.Namespace] (Quarkus Main Thread) Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2022-09-19 12:02:18,193 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.boo.mod.sou.int.ann.AnnotationMetadataSourceProcessorImpl] (Quarkus Main Thread) Skipping explicit MappedSuperclass io.quarkus.hibernate.orm.panache.PanacheEntity, the class will be discovered analyzing the implementing class
+2022-09-19 12:02:18,193 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.AnnotationBinder] (Quarkus Main Thread) Binding entity from annotated class: org.acme.Person
+2022-09-19 12:02:18,193 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Ejb3Column] (Quarkus Main Thread) Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2022-09-19 12:02:18,193 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.EntityBinder] (Quarkus Main Thread) Import with entity name Person
+2022-09-19 12:02:18,193 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.EntityBinder] (Quarkus Main Thread) Bind entity org.acme.Person on table Person
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Ejb3Column] (Quarkus Main Thread) Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Person), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.boo.int.ClassLoaderAccessImpl] (Quarkus Main Thread) Not known whether passed class name [org.acme.Person] is safe
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.boo.int.ClassLoaderAccessImpl] (Quarkus Main Thread) No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : org.acme.Person
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.PropertyBinder] (Quarkus Main Thread) MetadataSourceProcessor property id with lazy=false
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.AbstractPropertyHolder] (Quarkus Main Thread) Attempting to locate auto-apply AttributeConverter for property [org.acme.Person:id]
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.SimpleValueBinder] (Quarkus Main Thread) building SimpleValue for id
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.PropertyBinder] (Quarkus Main Thread) Building property id
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.BinderHelper] (Quarkus Main Thread) #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Ejb3Column] (Quarkus Main Thread) Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Person), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.PropertyBinder] (Quarkus Main Thread) MetadataSourceProcessor property firstName with lazy=false
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.AbstractPropertyHolder] (Quarkus Main Thread) Attempting to locate auto-apply AttributeConverter for property [org.acme.Person:firstName]
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.SimpleValueBinder] (Quarkus Main Thread) building SimpleValue for firstName
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.PropertyBinder] (Quarkus Main Thread) Building property firstName
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Ejb3Column] (Quarkus Main Thread) Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Person), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.PropertyBinder] (Quarkus Main Thread) MetadataSourceProcessor property lastName with lazy=false
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.AbstractPropertyHolder] (Quarkus Main Thread) Attempting to locate auto-apply AttributeConverter for property [org.acme.Person:lastName]
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.SimpleValueBinder] (Quarkus Main Thread) building SimpleValue for lastName
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.PropertyBinder] (Quarkus Main Thread) Building property lastName
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Ejb3Column] (Quarkus Main Thread) Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Person), mappingColumn=salutation, insertable=true, updatable=true, unique=false}
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.PropertyBinder] (Quarkus Main Thread) MetadataSourceProcessor property salutation with lazy=false
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.AbstractPropertyHolder] (Quarkus Main Thread) Attempting to locate auto-apply AttributeConverter for property [org.acme.Person:salutation]
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.SimpleValueBinder] (Quarkus Main Thread) building SimpleValue for salutation
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.PropertyBinder] (Quarkus Main Thread) Building property salutation
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.SimpleValueBinder] (Quarkus Main Thread) Starting fillSimpleValue for id
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.SimpleValueBinder] (Quarkus Main Thread) Starting fillSimpleValue for firstName
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.SimpleValueBinder] (Quarkus Main Thread) Starting fillSimpleValue for lastName
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.ann.SimpleValueBinder] (Quarkus Main Thread) Starting fillSimpleValue for salutation
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.map.PrimaryKey] (Quarkus Main Thread) Forcing column [id] to be non-null as it is part of the primary key for table [person]
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.inf.qua.hib.cac.QuarkusInfinispanRegionFactory] (Quarkus Main Thread) Stop region factory
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.inf.qua.hib.cac.QuarkusInfinispanRegionFactory] (Quarkus Main Thread) Clear region references
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.boo.reg.int.BootstrapServiceRegistryImpl] (Quarkus Main Thread) Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.boo.reg.int.BootstrapServiceRegistryImpl] (Quarkus Main Thread) Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.boo.int.ClassLoaderAccessImpl] (Quarkus Main Thread) Not known whether passed class name [org.acme.Person] is safe
+2022-09-19 12:02:18,194 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.boo.int.ClassLoaderAccessImpl] (Quarkus Main Thread) No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : org.acme.Person
+2022-09-19 12:02:18,195 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.arc.run.ArcRecorder] (Quarkus Main Thread) Bean container listener io.quarkus.hibernate.orm.runtime.HibernateOrmRecorder$1 finished in 5 ms
+2022-09-19 12:02:18,196 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.common.runtime.jackson.QuarkusObjectMapperContextResolver()
+2022-09-19 12:02:18,196 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.DefaultTextPlain()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.DefaultTextPlain()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.DefaultTextPlain()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.DefaultTextPlain()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.runtime.vertx.JsonObjectWriter()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.runtime.vertx.JsonObjectWriter()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.ReactiveStreamProvider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.interceptors.CacheControlFeature()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.interceptors.CacheControlFeature()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.interceptors.ServerContentEncodingAnnotationFeature()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.CompletionStageProvider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.interceptors.ClientContentEncodingAnnotationFeature()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.runtime.AuthenticationCompletionExceptionMapper()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.DefaultNumberWriter()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.DefaultNumberWriter()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.jackson.UnrecognizedPropertyExceptionHandler()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.mutiny.common.runtime.MultiProvider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.common.runtime.jackson.QuarkusJacksonSerializer()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.common.runtime.jackson.QuarkusJacksonSerializer()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.common.runtime.jackson.QuarkusJacksonSerializer()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.common.runtime.jackson.QuarkusJacksonSerializer()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.runtime.vertx.JsonArrayReader()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.runtime.vertx.JsonArrayReader()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.runtime.vertx.JsonObjectReader()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.runtime.vertx.JsonObjectReader()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.FileProvider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.FileProvider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.FileProvider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.FileProvider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.runtime.ForbiddenExceptionMapper()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.runtime.CompositeExceptionMapper()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.runtime.NotFoundExceptionMapper()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.runtime.AuthenticationRedirectExceptionMapper()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.MultiValuedParamConverterProvider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.ByteArrayProvider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.ByteArrayProvider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.ByteArrayProvider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.ByteArrayProvider()
+2022-09-19 12:02:18,197 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.DefaultBooleanWriter()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.DefaultBooleanWriter()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.StringTextStar()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.StringTextStar()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.StringTextStar()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.StringTextStar()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.runtime.vertx.JsonArrayWriter()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.runtime.vertx.JsonArrayWriter()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.runtime.UnauthorizedExceptionMapper()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.mutiny.common.runtime.UniProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.mutiny.common.runtime.UniProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public io.quarkus.resteasy.runtime.AuthenticationFailedExceptionMapper()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.StreamingOutputProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.StreamingOutputProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.ReaderProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.ReaderProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.ReaderProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.ReaderProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.DataSourceProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.DataSourceProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.DataSourceProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.DataSourceProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.AsyncStreamingOutputProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.AsyncStreamingOutputProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.FileRangeWriter()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.FileRangeWriter()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.InputStreamProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.InputStreamProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.InputStreamProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.InputStreamProvider()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create resource constructor: public org.acme.index()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.jackson.PatchMethodFilter()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.providers.sse.SseEventSinkInterceptor()
+2022-09-19 12:02:18,198 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create constructor: public org.jboss.resteasy.plugins.interceptors.MessageSanitizerContainerResponseFilter()
+2022-09-19 12:02:18,199 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.res.runtime] (Quarkus Main Thread) Create resource constructor: public org.acme.PersonResource()
+2022-09-19 12:02:18,271 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.agr.run.DataSources] (Quarkus Main Thread) Started datasource <default> connected to jdbc:h2:mem:default
+2022-09-19 12:02:18,271 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [com.arj.ats.jta] (Quarkus Main Thread) Setting up node identifiers '[quarkus]' for which recovery will be performed
+2022-09-19 12:02:18,391 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.FastBootHibernatePersistenceProvider] (JPA Startup Thread: <default>) Located 1 persistence units; checking each
+2022-09-19 12:02:18,394 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.FastBootHibernatePersistenceProvider] (JPA Startup Thread: <default>) Checking persistence-unit [name=<default>, explicit-provider=null] against incoming persistence unit name [<default>]
+2022-09-19 12:02:18,398 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.hib.orm.run.FastBootHibernatePersistenceProvider] (JPA Startup Thread: <default>) No PersistenceProvider explicitly requested, assuming Hibernate
+2022-09-19 12:02:18,400 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.jdb.env.int.JdbcEnvironmentInitiator] (JPA Startup Thread: <default>) Database ->
+       name : H2
+    version : 2.1.214 (2022-06-13)
+      major : 2
+      minor : 1
+2022-09-19 12:02:18,400 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.jdb.env.int.JdbcEnvironmentInitiator] (JPA Startup Thread: <default>) Driver ->
+       name : H2 JDBC Driver
+    version : 2.1.214 (2022-06-13)
+      major : 2
+      minor : 1
+2022-09-19 12:02:18,401 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.jdb.env.int.JdbcEnvironmentInitiator] (JPA Startup Thread: <default>) JDBC version : 4.2
+2022-09-19 12:02:18,401 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.jdb.env.spi.IdentifierHelperBuilder] (JPA Startup Thread: <default>) JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2022-09-19 12:02:18,402 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.int.SessionFactoryImpl] (JPA Startup Thread: <default>) Building session factory
+2022-09-19 12:02:18,402 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) SessionFactory name : null
+2022-09-19 12:02:18,403 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Automatic flush during beforeCompletion(): enabled
+2022-09-19 12:02:18,403 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Automatic session close at end of transaction: disabled
+2022-09-19 12:02:18,404 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Statistics: disabled
+2022-09-19 12:02:18,404 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Deleted entity synthetic identifier rollback: disabled
+2022-09-19 12:02:18,405 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Default entity-mode: pojo
+2022-09-19 12:02:18,405 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2022-09-19 12:02:18,406 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Allow initialization of lazy state outside session : disabled
+2022-09-19 12:02:18,407 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Using BatchFetchStyle : PADDED
+2022-09-19 12:02:18,407 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Default batch fetch size: 16
+2022-09-19 12:02:18,408 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Maximum outer join fetch depth: null
+2022-09-19 12:02:18,408 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Default null ordering: NONE
+2022-09-19 12:02:18,409 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Order SQL updates by primary key: enabled
+2022-09-19 12:02:18,409 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Order SQL inserts for batching: disabled
+2022-09-19 12:02:18,409 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) multi-tenancy strategy : NONE
+2022-09-19 12:02:18,409 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) JTA Track by Thread: enabled
+2022-09-19 12:02:18,410 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Query language substitutions: {}
+2022-09-19 12:02:18,410 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Named query checking : enabled
+2022-09-19 12:02:18,410 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Second-level cache: enabled
+2022-09-19 12:02:18,411 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Second-level query cache: enabled
+2022-09-19 12:02:18,411 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Second-level query cache factory: org.hibernate.cache.internal.StandardTimestampsCacheFactory@686d7568
+2022-09-19 12:02:18,411 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Second-level cache region prefix: null
+2022-09-19 12:02:18,411 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Optimize second-level cache for minimal puts: disabled
+2022-09-19 12:02:18,412 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Structured second-level cache entries: disabled
+2022-09-19 12:02:18,412 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Second-level cache direct-reference entries: enabled
+2022-09-19 12:02:18,412 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Automatic eviction of collection cache: disabled
+2022-09-19 12:02:18,412 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) JDBC batch size: 15
+2022-09-19 12:02:18,413 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) JDBC batch updates for versioned data: enabled
+2022-09-19 12:02:18,413 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Scrollable result sets: enabled
+2022-09-19 12:02:18,413 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Wrap result sets: disabled
+2022-09-19 12:02:18,413 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) JDBC3 getGeneratedKeys(): enabled
+2022-09-19 12:02:18,414 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) JDBC result set fetch size: null
+2022-09-19 12:02:18,414 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Connection release mode: BEFORE_TRANSACTION_COMPLETION
+2022-09-19 12:02:18,414 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) Generate SQL with comments: disabled
+2022-09-19 12:02:18,415 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) JPA compliance - query : disabled
+2022-09-19 12:02:18,415 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) JPA compliance - closed-handling : disabled
+2022-09-19 12:02:18,415 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) JPA compliance - lists : disabled
+2022-09-19 12:02:18,415 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.Settings] (JPA Startup Thread: <default>) JPA compliance - transactions : disabled
+2022-09-19 12:02:18,416 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.ser.int.SessionFactoryServiceRegistryImpl] (JPA Startup Thread: <default>) EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2022-09-19 12:02:18,417 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.inf.qua.hib.cac.QuarkusInfinispanRegionFactory] (JPA Startup Thread: <default>) Starting Infinispan region factory
+2022-09-19 12:02:18,417 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.inf.qua.hib.cac.QuarkusInfinispanRegionFactory] (JPA Startup Thread: <default>) Building timestamps cache region [default-update-timestamps-region]
+2022-09-19 12:02:18,418 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.inf.qua.hib.cac.QuarkusInfinispanRegionFactory] (JPA Startup Thread: <default>) Building query results cache region [default-query-results-region]
+2022-09-19 12:02:18,418 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.int.SessionFactoryImpl] (JPA Startup Thread: <default>) Session factory constructed with filter configurations : {}
+2022-09-19 12:02:18,418 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.int.SessionFactoryImpl] (JPA Startup Thread: <default>) Instantiating session factory with properties: {hibernate.hbm2ddl.schema-generation.script.append=false, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_RELEASE_BEFORE_TRANSACTION_COMPLETION, hibernate.dialect=io.quarkus.hibernate.orm.runtime.dialect.QuarkusH2Dialect, hibernate.cache.use_query_cache=true, hibernate.hbm2ddl.charset_name=UTF-8, hibernate.xml_mapping_enabled=false, hibernate.query.plan_cache_max_size=2048, hibernate.id.sequence.increment_size_mismatch_strategy=NONE, javax.persistence.schema-generation.scripts.action=none, hibernate.order_updates=true, hibernate.order_by.default_null_ordering=none, javax.persistence.sharedCache.mode=ENABLE_SELECTIVE, hibernate.allow_update_outside_transaction=false, hibernate.bytecode.allow_enhancement_as_proxy=true, javax.persistence.schema-generation.database.action=drop-and-create, javax.persistence.create-database-schemas=false, hibernate.cache.use_reference_entries=true, hibernate.cache.use_second_level_cache=true, hibernate.persistenceUnitName=<default>, hibernate.multiTenancy=NONE, hibernate.jdbc.wrap_result_sets=false, hibernate.temp.use_jdbc_metadata_defaults=true, hibernate.discriminator.ignore_explicit_for_joined=false, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl, hibernate.connection.provider_disables_autocommit=true, hibernate.connection.datasource=io.agroal.pool.DataSource@1bd2cf, hibernate.hbm2ddl.import_files=dataBase.sql, hibernate.cache.region.factory_class=org.infinispan.quarkus.hibernate.cache.QuarkusInfinispanRegionFactory, hibernate.default_batch_fetch_size=16, hibernate.batch_fetch_style=PADDED}
+2022-09-19 12:02:18,419 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.cfg.bea.TypeSafeActivator] (JPA Startup Thread: <default>) Unable to acquire Bean Validation ValidatorFactory, skipping activation
+2022-09-19 12:02:18,420 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.too.sch.int.SchemaCreatorImpl] (JPA Startup Thread: <default>) HHH000476: Executing import script 'file:/D:/dev/Reactive_SQL_Client/Reactive_SQL_Client/target/classes/dataBase.sql'
+2022-09-19 12:02:18,420 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Doro', 'Pesch', 'Mrs')
+2022-09-19 12:02:18,421 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Bobby', 'Brown', 'Mr')
+2022-09-19 12:02:18,421 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Curt', 'Cobain', 'Mr')
+2022-09-19 12:02:18,422 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Nina', 'Hagen', 'Mrs')
+2022-09-19 12:02:18,423 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Jimmi', 'Henrix', 'Mr')
+2022-09-19 12:02:18,424 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Janis', 'Joplin', 'Mrs')
+2022-09-19 12:02:18,425 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Joe', 'Cocker', 'Mr')
+2022-09-19 12:02:18,425 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Alice', 'Cooper', 'Mr')
+2022-09-19 12:02:18,426 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Bruce', 'Springsteen', 'Mr')
+2022-09-19 12:02:18,426 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Eric', 'Clapton', 'Mr')
+2022-09-19 12:02:18,427 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.int.SessionFactoryImpl] (JPA Startup Thread: <default>) Instantiated session factory
+2022-09-19 12:02:18,427 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.spi.TypeConfiguration$Scope] (JPA Startup Thread: <default>) Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@62f4e311] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@4245614]
+2022-09-19 12:02:18,429 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.per.ent.AbstractEntityPersister] (JPA Startup Thread: <default>) Static SQL for entity: org.acme.Person
+2022-09-19 12:02:18,430 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.per.ent.AbstractEntityPersister] (JPA Startup Thread: <default>)  Version select: select id from Person where id =?
+2022-09-19 12:02:18,430 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.per.ent.AbstractEntityPersister] (JPA Startup Thread: <default>)  Snapshot select: select person_.id, person_.first_name as first_na2_0_, person_.last_name as last_nam3_0_, person_.salutation as salutati4_0_ from Person person_ where person_.id=?
+2022-09-19 12:02:18,430 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.per.ent.AbstractEntityPersister] (JPA Startup Thread: <default>)  Insert 0: insert into Person (first_name, last_name, salutation, id) values (?, ?, ?, ?)
+2022-09-19 12:02:18,431 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.per.ent.AbstractEntityPersister] (JPA Startup Thread: <default>)  Update 0: update Person set first_name=?, last_name=?, salutation=? where id=?
+2022-09-19 12:02:18,431 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.per.ent.AbstractEntityPersister] (JPA Startup Thread: <default>)  Delete 0: delete from Person where id=?
+2022-09-19 12:02:18,432 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.bui.int.spa.QuerySpacesImpl] (JPA Startup Thread: <default>) Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@569fa4e4]
+2022-09-19 12:02:18,432 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.per.wal.spi.MetamodelGraphWalker] (JPA Startup Thread: <default>) Visiting attribute path : firstName
+2022-09-19 12:02:18,433 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.per.wal.spi.MetamodelGraphWalker] (JPA Startup Thread: <default>) Visiting attribute path : lastName
+2022-09-19 12:02:18,433 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.per.wal.spi.MetamodelGraphWalker] (JPA Startup Thread: <default>) Visiting attribute path : salutation
+2022-09-19 12:02:18,434 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.bui.int.FetchStyleLoadPlanBuildingAssociationVisitationStrategy] (JPA Startup Thread: <default>) Building LoadPlan...
+2022-09-19 12:02:18,434 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.exe.int.LoadQueryJoinAndFetchProcessor] (JPA Startup Thread: <default>) processing queryspace <gen:0>
+2022-09-19 12:02:18,435 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.bui.spi.LoadPlanTreePrinter] (JPA Startup Thread: <default>) LoadPlan(entity=org.acme.Person)
+    - Returns
+       - EntityReturnImpl(entity=org.acme.Person, querySpaceUid=<gen:0>, path=org.acme.Person)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.acme.Person)
+          - SQL table alias mapping - person0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2022-09-19 12:02:18,436 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.ent.pla.EntityLoader] (JPA Startup Thread: <default>) Static select for entity org.acme.Person [NONE:-1]: select person0_.id as id1_0_0_, person0_.first_name as first_na2_0_0_, person0_.last_name as last_nam3_0_0_, person0_.salutation as salutati4_0_0_ from Person person0_ where person0_.id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-09-19 12:02:18,436 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.exe.int.LoadQueryJoinAndFetchProcessor] (JPA Startup Thread: <default>) processing queryspace <gen:0>
+2022-09-19 12:02:18,437 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.bui.spi.LoadPlanTreePrinter] (JPA Startup Thread: <default>) LoadPlan(entity=org.acme.Person)
+    - Returns
+       - EntityReturnImpl(entity=org.acme.Person, querySpaceUid=<gen:0>, path=org.acme.Person)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.acme.Person)
+          - SQL table alias mapping - person0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2022-09-19 12:02:18,437 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.ent.pla.EntityLoader] (JPA Startup Thread: <default>) Static select for entity org.acme.Person [NONE:-1]: select person0_.id as id1_0_0_, person0_.first_name as first_na2_0_0_, person0_.last_name as last_nam3_0_0_, person0_.salutation as salutati4_0_0_ from Person person0_ where person0_.id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-09-19 12:02:18,438 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.exe.int.LoadQueryJoinAndFetchProcessor] (JPA Startup Thread: <default>) processing queryspace <gen:0>
+2022-09-19 12:02:18,439 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.bui.spi.LoadPlanTreePrinter] (JPA Startup Thread: <default>) LoadPlan(entity=org.acme.Person)
+    - Returns
+       - EntityReturnImpl(entity=org.acme.Person, querySpaceUid=<gen:0>, path=org.acme.Person)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.acme.Person)
+          - SQL table alias mapping - person0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2022-09-19 12:02:18,440 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.ent.pla.EntityLoader] (JPA Startup Thread: <default>) Static select for entity org.acme.Person [NONE:-1]: select person0_.id as id1_0_0_, person0_.first_name as first_na2_0_0_, person0_.last_name as last_nam3_0_0_, person0_.salutation as salutati4_0_0_ from Person person0_ where person0_.id in (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-09-19 12:02:18,445 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.exe.int.LoadQueryJoinAndFetchProcessor] (JPA Startup Thread: <default>) processing queryspace <gen:0>
+2022-09-19 12:02:18,446 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.bui.spi.LoadPlanTreePrinter] (JPA Startup Thread: <default>) LoadPlan(entity=org.acme.Person)
+    - Returns
+       - EntityReturnImpl(entity=org.acme.Person, querySpaceUid=<gen:0>, path=org.acme.Person)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.acme.Person)
+          - SQL table alias mapping - person0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2022-09-19 12:02:18,456 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.ent.pla.EntityLoader] (JPA Startup Thread: <default>) Static select for entity org.acme.Person [NONE:-1]: select person0_.id as id1_0_0_, person0_.first_name as first_na2_0_0_, person0_.last_name as last_nam3_0_0_, person0_.salutation as salutati4_0_0_ from Person person0_ where person0_.id in (?, ?, ?, ?, ?, ?, ?, ?)
+2022-09-19 12:02:18,457 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.exe.int.LoadQueryJoinAndFetchProcessor] (JPA Startup Thread: <default>) processing queryspace <gen:0>
+2022-09-19 12:02:18,458 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.bui.spi.LoadPlanTreePrinter] (JPA Startup Thread: <default>) LoadPlan(entity=org.acme.Person)
+    - Returns
+       - EntityReturnImpl(entity=org.acme.Person, querySpaceUid=<gen:0>, path=org.acme.Person)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.acme.Person)
+          - SQL table alias mapping - person0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2022-09-19 12:02:18,459 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.ent.pla.EntityLoader] (JPA Startup Thread: <default>) Static select for entity org.acme.Person [NONE:-1]: select person0_.id as id1_0_0_, person0_.first_name as first_na2_0_0_, person0_.last_name as last_nam3_0_0_, person0_.salutation as salutati4_0_0_ from Person person0_ where person0_.id in (?, ?, ?, ?, ?, ?, ?)
+2022-09-19 12:02:18,459 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.exe.int.LoadQueryJoinAndFetchProcessor] (JPA Startup Thread: <default>) processing queryspace <gen:0>
+2022-09-19 12:02:18,460 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.bui.spi.LoadPlanTreePrinter] (JPA Startup Thread: <default>) LoadPlan(entity=org.acme.Person)
+    - Returns
+       - EntityReturnImpl(entity=org.acme.Person, querySpaceUid=<gen:0>, path=org.acme.Person)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.acme.Person)
+          - SQL table alias mapping - person0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2022-09-19 12:02:18,460 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.ent.pla.EntityLoader] (JPA Startup Thread: <default>) Static select for entity org.acme.Person [NONE:-1]: select person0_.id as id1_0_0_, person0_.first_name as first_na2_0_0_, person0_.last_name as last_nam3_0_0_, person0_.salutation as salutati4_0_0_ from Person person0_ where person0_.id in (?, ?, ?, ?, ?, ?)
+2022-09-19 12:02:18,461 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.exe.int.LoadQueryJoinAndFetchProcessor] (JPA Startup Thread: <default>) processing queryspace <gen:0>
+2022-09-19 12:02:18,461 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.bui.spi.LoadPlanTreePrinter] (JPA Startup Thread: <default>) LoadPlan(entity=org.acme.Person)
+    - Returns
+       - EntityReturnImpl(entity=org.acme.Person, querySpaceUid=<gen:0>, path=org.acme.Person)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.acme.Person)
+          - SQL table alias mapping - person0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2022-09-19 12:02:18,462 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.ent.pla.EntityLoader] (JPA Startup Thread: <default>) Static select for entity org.acme.Person [NONE:-1]: select person0_.id as id1_0_0_, person0_.first_name as first_na2_0_0_, person0_.last_name as last_nam3_0_0_, person0_.salutation as salutati4_0_0_ from Person person0_ where person0_.id in (?, ?, ?, ?, ?)
+2022-09-19 12:02:18,462 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.exe.int.LoadQueryJoinAndFetchProcessor] (JPA Startup Thread: <default>) processing queryspace <gen:0>
+2022-09-19 12:02:18,463 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.bui.spi.LoadPlanTreePrinter] (JPA Startup Thread: <default>) LoadPlan(entity=org.acme.Person)
+    - Returns
+       - EntityReturnImpl(entity=org.acme.Person, querySpaceUid=<gen:0>, path=org.acme.Person)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.acme.Person)
+          - SQL table alias mapping - person0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2022-09-19 12:02:18,463 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.ent.pla.EntityLoader] (JPA Startup Thread: <default>) Static select for entity org.acme.Person [NONE:-1]: select person0_.id as id1_0_0_, person0_.first_name as first_na2_0_0_, person0_.last_name as last_nam3_0_0_, person0_.salutation as salutati4_0_0_ from Person person0_ where person0_.id in (?, ?, ?, ?)
+2022-09-19 12:02:18,464 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.exe.int.LoadQueryJoinAndFetchProcessor] (JPA Startup Thread: <default>) processing queryspace <gen:0>
+2022-09-19 12:02:18,464 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.bui.spi.LoadPlanTreePrinter] (JPA Startup Thread: <default>) LoadPlan(entity=org.acme.Person)
+    - Returns
+       - EntityReturnImpl(entity=org.acme.Person, querySpaceUid=<gen:0>, path=org.acme.Person)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.acme.Person)
+          - SQL table alias mapping - person0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2022-09-19 12:02:18,465 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.ent.pla.EntityLoader] (JPA Startup Thread: <default>) Static select for entity org.acme.Person [NONE:-1]: select person0_.id as id1_0_0_, person0_.first_name as first_na2_0_0_, person0_.last_name as last_nam3_0_0_, person0_.salutation as salutati4_0_0_ from Person person0_ where person0_.id in (?, ?, ?)
+2022-09-19 12:02:18,465 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.exe.int.LoadQueryJoinAndFetchProcessor] (JPA Startup Thread: <default>) processing queryspace <gen:0>
+2022-09-19 12:02:18,466 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.bui.spi.LoadPlanTreePrinter] (JPA Startup Thread: <default>) LoadPlan(entity=org.acme.Person)
+    - Returns
+       - EntityReturnImpl(entity=org.acme.Person, querySpaceUid=<gen:0>, path=org.acme.Person)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.acme.Person)
+          - SQL table alias mapping - person0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2022-09-19 12:02:18,466 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.ent.pla.EntityLoader] (JPA Startup Thread: <default>) Static select for entity org.acme.Person [NONE:-1]: select person0_.id as id1_0_0_, person0_.first_name as first_na2_0_0_, person0_.last_name as last_nam3_0_0_, person0_.salutation as salutati4_0_0_ from Person person0_ where person0_.id in (?, ?)
+2022-09-19 12:02:18,467 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.exe.int.LoadQueryJoinAndFetchProcessor] (JPA Startup Thread: <default>) processing queryspace <gen:0>
+2022-09-19 12:02:18,467 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.pla.bui.spi.LoadPlanTreePrinter] (JPA Startup Thread: <default>) LoadPlan(entity=org.acme.Person)
+    - Returns
+       - EntityReturnImpl(entity=org.acme.Person, querySpaceUid=<gen:0>, path=org.acme.Person)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.acme.Person)
+          - SQL table alias mapping - person0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2022-09-19 12:02:18,468 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.ent.pla.EntityLoader] (JPA Startup Thread: <default>) Static select for entity org.acme.Person [NONE:-1]: select person0_.id as id1_0_0_, person0_.first_name as first_na2_0_0_, person0_.last_name as last_nam3_0_0_, person0_.salutation as salutati4_0_0_ from Person person0_ where person0_.id=?
+2022-09-19 12:02:18,469 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (JPA Startup Thread: <default>) drop table if exists Person CASCADE 
+2022-09-19 12:02:18,470 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (JPA Startup Thread: <default>) drop sequence if exists hibernate_sequence
+2022-09-19 12:02:18,471 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (JPA Startup Thread: <default>) create sequence hibernate_sequence start with 1 increment by 1
+2022-09-19 12:02:18,472 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (JPA Startup Thread: <default>) create table Person (id bigint not null, first_name varchar(255), last_name varchar(255), salutation varchar(255), primary key (id))
+2022-09-19 12:02:18,474 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.too.sch.int.SchemaCreatorImpl] (JPA Startup Thread: <default>) HHH000476: Executing import script 'file:/D:/dev/Reactive_SQL_Client/Reactive_SQL_Client/target/classes/dataBase.sql'
+2022-09-19 12:02:18,475 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Doro', 'Pesch', 'Mrs')
+2022-09-19 12:02:18,476 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Bobby', 'Brown', 'Mr')
+2022-09-19 12:02:18,476 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Curt', 'Cobain', 'Mr')
+2022-09-19 12:02:18,477 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Nina', 'Hagen', 'Mrs')
+2022-09-19 12:02:18,477 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Jimmi', 'Henrix', 'Mr')
+2022-09-19 12:02:18,478 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Janis', 'Joplin', 'Mrs')
+2022-09-19 12:02:18,479 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Joe', 'Cocker', 'Mr')
+2022-09-19 12:02:18,480 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Alice', 'Cooper', 'Mr')
+2022-09-19 12:02:18,480 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Bruce', 'Springsteen', 'Mr')
+2022-09-19 12:02:18,481 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.too.sch.scr.graph] (JPA Startup Thread: <default>) Import statement : insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Eric', 'Clapton', 'Mr')
+2022-09-19 12:02:18,481 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (JPA Startup Thread: <default>) insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Doro', 'Pesch', 'Mrs')
+2022-09-19 12:02:18,483 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (JPA Startup Thread: <default>) insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Bobby', 'Brown', 'Mr')
+2022-09-19 12:02:18,483 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (JPA Startup Thread: <default>) insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Curt', 'Cobain', 'Mr')
+2022-09-19 12:02:18,484 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (JPA Startup Thread: <default>) insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Nina', 'Hagen', 'Mrs')
+2022-09-19 12:02:18,485 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (JPA Startup Thread: <default>) insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Jimmi', 'Henrix', 'Mr')
+2022-09-19 12:02:18,487 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (JPA Startup Thread: <default>) insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Janis', 'Joplin', 'Mrs')
+2022-09-19 12:02:18,493 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (JPA Startup Thread: <default>) insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Joe', 'Cocker', 'Mr')
+2022-09-19 12:02:18,494 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (JPA Startup Thread: <default>) insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Alice', 'Cooper', 'Mr')
+2022-09-19 12:02:18,501 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (JPA Startup Thread: <default>) insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Bruce', 'Springsteen', 'Mr')
+2022-09-19 12:02:18,502 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (JPA Startup Thread: <default>) insert into person(id, first_name, last_name, salutation) values (nextval('hibernate_sequence'), 'Eric', 'Clapton', 'Mr')
+2022-09-19 12:02:18,503 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.que.spi.NamedQueryRepository] (JPA Startup Thread: <default>) Checking 0 named HQL queries
+2022-09-19 12:02:18,504 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.que.spi.NamedQueryRepository] (JPA Startup Thread: <default>) Checking 0 named SQL queries
+2022-09-19 12:02:18,504 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.ser.int.SessionFactoryServiceRegistryImpl] (JPA Startup Thread: <default>) EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2022-09-19 12:02:18,505 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.int.SessionFactoryRegistry] (JPA Startup Thread: <default>) Registering SessionFactory: f27628ef-542b-4aa5-9009-534b3095ae7f (<unnamed>)
+2022-09-19 12:02:18,505 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.int.SessionFactoryRegistry] (JPA Startup Thread: <default>) Not binding SessionFactory to JNDI, no JNDI name configured
+2022-09-19 12:02:18,518 lylap2242 code-with-quarkus-dev.jar[39292] INFO  [io.quarkus] (Quarkus Main Thread) code-with-quarkus 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.12.2.Final) started in 0.678s. Listening on: http://localhost:8080
+2022-09-19 12:02:18,519 lylap2242 code-with-quarkus-dev.jar[39292] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-09-19 12:02:18,519 lylap2242 code-with-quarkus-dev.jar[39292] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, jdbc-h2, jdbc-postgresql, narayana-jta, reactive-pg-client, resteasy, resteasy-jackson, resteasy-mutiny, smallrye-context-propagation, vertx]
+2022-09-19 12:02:18,519 lylap2242 code-with-quarkus-dev.jar[39292] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-0) Live reload total time: 0.786s 
+2022-09-19 12:02:18,523 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) RESTEASY002315: PathInfo: /Person
+2022-09-19 12:02:18,525 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.acme] (executor-thread-0) Le getAll marche
+2022-09-19 12:02:18,526 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.res.jdb.int.LogicalConnectionManagedImpl] (executor-thread-0) `hibernate.connection.provider_disables_autocommit` was enabled.  This setting should only be enabled when you are certain that the Connections given to Hibernate by the ConnectionProvider have auto-commit disabled.  Enabling this setting when the Connections do not have auto-commit disabled will lead to Hibernate executing SQL operations outside of any JDBC/SQL transaction.
+2022-09-19 12:02:18,526 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.sta.int.StatisticsInitiator] (executor-thread-0) Statistics initialized [enabled=false]
+2022-09-19 12:02:18,527 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.QueryTranslatorFactoryInitiator] (executor-thread-0) QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@6a68478e
+2022-09-19 12:02:18,527 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.QueryTranslatorImpl] (executor-thread-0) parse() - HQL: FROM org.acme.Person ORDER BY id
+2022-09-19 12:02:18,527 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.ErrorTracker] (executor-thread-0) throwQueryException() : no errors
+2022-09-19 12:02:18,528 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.QueryTranslatorImpl] (executor-thread-0) --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'FROM'
+    |     \-[RANGE] Node: 'RANGE'
+    |        \-[DOT] Node: '.'
+    |           +-[DOT] Node: '.'
+    |           |  +-[IDENT] Node: 'org'
+    |           |  \-[IDENT] Node: 'acme'
+    |           \-[IDENT] Node: 'Person'
+    \-[ORDER] Node: 'ORDER'
+       \-[IDENT] Node: 'id'
+
+2022-09-19 12:02:18,528 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ant.HqlSqlBaseWalker] (executor-thread-0) select << begin [level=1, statement=select]
+2022-09-19 12:02:18,528 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.tre.FromElement] (executor-thread-0) FromClause{level=1} : org.acme.Person (<no alias>) -> person0_
+2022-09-19 12:02:18,529 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.tre.FromReferenceNode] (executor-thread-0) Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-09-19 12:02:18,529 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.tre.DotNode] (executor-thread-0) getDataType() : id -> org.hibernate.type.LongType@59e42ff7
+2022-09-19 12:02:18,530 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.tre.FromReferenceNode] (executor-thread-0) Resolved : {synthetic-alias}.id -> person0_.id
+2022-09-19 12:02:18,530 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ant.HqlSqlBaseWalker] (executor-thread-0) select : finishing up [level=1, statement=select]
+2022-09-19 12:02:18,530 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.HqlSqlWalker] (executor-thread-0) processQuery() :  ( SELECT ( FromClause{level=1} Person person0_ ) ( ORDER ( person0_.id {synthetic-alias} id ) ) )
+2022-09-19 12:02:18,531 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.HqlSqlWalker] (executor-thread-0) Derived SELECT clause created.
+2022-09-19 12:02:18,531 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.uti.JoinProcessor] (executor-thread-0) Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Person): [Person]
+    |  +-SelectExpressionImpl
+    |  | persister: SingleTableEntityPersister(org.acme.Person)
+    |  \-SqlFragment
+    +-FromClause
+    |  \-FromElement
+    \-OrderByClause
+       \-DotNode
+         persister: SingleTableEntityPersister(org.acme.Person)
+         path: {synthetic-alias}.id
+          +-IdentNode
+          | persister: SingleTableEntityPersister(org.acme.Person)
+          | originalText: {synthetic-alias}
+          \-IdentNode
+            persister: null
+            originalText: id
+
+2022-09-19 12:02:18,532 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.uti.JoinProcessor] (executor-thread-0) Using FROM fragment [Person person0_]
+2022-09-19 12:02:18,533 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ant.HqlSqlBaseWalker] (executor-thread-0) select >> end [level=1, statement=select]
+2022-09-19 12:02:18,534 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.QueryTranslatorImpl] (executor-thread-0) --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Person)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'person0_.id as id1_0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=Person,tableAlias=person0_,origin=null,columns={,className=org.acme.Person}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'person0_.first_name as first_na2_0_, person0_.last_name as last_nam3_0_, person0_.salutation as salutati4_0_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[person0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'Person person0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=Person,tableAlias=person0_,origin=null,columns={,className=org.acme.Person}}
+    \-[ORDER] OrderByClause: 'ORDER'
+       \-[DOT] DotNode: 'person0_.id' {propertyName=id,dereferenceType=PRIMITIVE,getPropertyPath=id,path={synthetic-alias}.id,tableAlias=person0_,className=org.acme.Person,classAlias=null}
+          +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          \-[IDENT] IdentNode: 'id' {originalText=id}
+
+2022-09-19 12:02:18,539 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.ErrorTracker] (executor-thread-0) throwQueryException() : no errors
+2022-09-19 12:02:18,539 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.QueryTranslatorImpl] (executor-thread-0) HQL: FROM org.acme.Person ORDER BY id
+2022-09-19 12:02:18,540 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.QueryTranslatorImpl] (executor-thread-0) SQL: select person0_.id as id1_0_, person0_.first_name as first_na2_0_, person0_.last_name as last_nam3_0_, person0_.salutation as salutati4_0_ from Person person0_ order by person0_.id
+2022-09-19 12:02:18,540 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.hql.int.ast.ErrorTracker] (executor-thread-0) throwQueryException() : no errors
+2022-09-19 12:02:18,541 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (executor-thread-0) select person0_.id as id1_0_, person0_.first_name as first_na2_0_, person0_.last_name as last_nam3_0_, person0_.salutation as salutati4_0_ from Person person0_ order by person0_.id
+2022-09-19 12:02:18,542 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 0
+2022-09-19 12:02:18,542 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#1]
+2022-09-19 12:02:18,543 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 1
+2022-09-19 12:02:18,543 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#2]
+2022-09-19 12:02:18,543 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 2
+2022-09-19 12:02:18,543 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#3]
+2022-09-19 12:02:18,544 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 3
+2022-09-19 12:02:18,544 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#4]
+2022-09-19 12:02:18,545 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 4
+2022-09-19 12:02:18,545 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#5]
+2022-09-19 12:02:18,546 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 5
+2022-09-19 12:02:18,546 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#6]
+2022-09-19 12:02:18,546 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 6
+2022-09-19 12:02:18,547 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#7]
+2022-09-19 12:02:18,548 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 7
+2022-09-19 12:02:18,549 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#8]
+2022-09-19 12:02:18,549 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 8
+2022-09-19 12:02:18,549 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#9]
+2022-09-19 12:02:18,550 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 9
+2022-09-19 12:02:18,550 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#10]
+2022-09-19 12:02:18,551 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#1]
+2022-09-19 12:02:18,551 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Doro
+2022-09-19 12:02:18,551 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,552 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Pesch
+2022-09-19 12:02:18,552 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,552 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mrs
+2022-09-19 12:02:18,552 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,553 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#1]
+2022-09-19 12:02:18,553 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#2]
+2022-09-19 12:02:18,553 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Bobby
+2022-09-19 12:02:18,554 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,554 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Brown
+2022-09-19 12:02:18,555 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,555 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:18,556 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,557 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#2]
+2022-09-19 12:02:18,557 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#3]
+2022-09-19 12:02:18,558 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Curt
+2022-09-19 12:02:18,558 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,559 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Cobain
+2022-09-19 12:02:18,559 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,559 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:18,560 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,560 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#3]
+2022-09-19 12:02:18,561 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#4]
+2022-09-19 12:02:18,561 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Nina
+2022-09-19 12:02:18,561 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,562 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Hagen
+2022-09-19 12:02:18,563 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,563 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mrs
+2022-09-19 12:02:18,563 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,564 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#4]
+2022-09-19 12:02:18,564 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#5]
+2022-09-19 12:02:18,564 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Jimmi
+2022-09-19 12:02:18,564 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,565 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Henrix
+2022-09-19 12:02:18,565 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,566 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:18,566 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,566 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#5]
+2022-09-19 12:02:18,567 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#6]
+2022-09-19 12:02:18,567 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Janis
+2022-09-19 12:02:18,567 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,568 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Joplin
+2022-09-19 12:02:18,568 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,568 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mrs
+2022-09-19 12:02:18,568 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,569 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#6]
+2022-09-19 12:02:18,569 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#7]
+2022-09-19 12:02:18,569 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Joe
+2022-09-19 12:02:18,570 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,570 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Cocker
+2022-09-19 12:02:18,571 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,572 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:18,572 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,572 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#7]
+2022-09-19 12:02:18,573 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#8]
+2022-09-19 12:02:18,573 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Alice
+2022-09-19 12:02:18,573 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,574 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Cooper
+2022-09-19 12:02:18,574 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,575 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:18,575 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,575 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#8]
+2022-09-19 12:02:18,576 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#9]
+2022-09-19 12:02:18,576 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Bruce
+2022-09-19 12:02:18,576 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,577 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Springsteen
+2022-09-19 12:02:18,577 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,578 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:18,582 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,583 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#9]
+2022-09-19 12:02:18,589 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#10]
+2022-09-19 12:02:18,590 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Eric
+2022-09-19 12:02:18,590 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,591 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Clapton
+2022-09-19 12:02:18,591 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,592 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:18,592 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:18,592 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#10]
+2022-09-19 12:02:18,594 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.res.jdb.int.LogicalConnectionManagedImpl] (executor-thread-0) Initiating JDBC connection release from afterTransaction
+2022-09-19 12:02:18,595 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2022-09-19 12:02:18,595 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2022-09-19 12:02:18,595 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2022-09-19 12:02:18,596 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2022-09-19 12:02:18,596 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2022-09-19 12:02:18,596 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2022-09-19 12:02:18,597 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2022-09-19 12:02:18,597 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+2022-09-19 12:02:19,306 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) RESTEASY002315: PathInfo: /Person
+2022-09-19 12:02:19,307 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.acme] (executor-thread-0) Le getAll marche
+2022-09-19 12:02:19,308 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.res.jdb.int.LogicalConnectionManagedImpl] (executor-thread-0) `hibernate.connection.provider_disables_autocommit` was enabled.  This setting should only be enabled when you are certain that the Connections given to Hibernate by the ConnectionProvider have auto-commit disabled.  Enabling this setting when the Connections do not have auto-commit disabled will lead to Hibernate executing SQL operations outside of any JDBC/SQL transaction.
+2022-09-19 12:02:19,309 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (executor-thread-0) select person0_.id as id1_0_, person0_.first_name as first_na2_0_, person0_.last_name as last_nam3_0_, person0_.salutation as salutati4_0_ from Person person0_ order by person0_.id
+2022-09-19 12:02:19,310 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 0
+2022-09-19 12:02:19,313 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#1]
+2022-09-19 12:02:19,313 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 1
+2022-09-19 12:02:19,314 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#2]
+2022-09-19 12:02:19,314 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 2
+2022-09-19 12:02:19,315 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#3]
+2022-09-19 12:02:19,315 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 3
+2022-09-19 12:02:19,316 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#4]
+2022-09-19 12:02:19,316 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 4
+2022-09-19 12:02:19,317 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#5]
+2022-09-19 12:02:19,317 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 5
+2022-09-19 12:02:19,318 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#6]
+2022-09-19 12:02:19,318 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 6
+2022-09-19 12:02:19,319 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#7]
+2022-09-19 12:02:19,319 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 7
+2022-09-19 12:02:19,320 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#8]
+2022-09-19 12:02:19,320 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 8
+2022-09-19 12:02:19,321 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#9]
+2022-09-19 12:02:19,321 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 9
+2022-09-19 12:02:19,322 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#10]
+2022-09-19 12:02:19,323 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#1]
+2022-09-19 12:02:19,324 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Doro
+2022-09-19 12:02:19,324 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,324 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Pesch
+2022-09-19 12:02:19,325 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,325 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mrs
+2022-09-19 12:02:19,325 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,325 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#1]
+2022-09-19 12:02:19,326 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#2]
+2022-09-19 12:02:19,326 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Bobby
+2022-09-19 12:02:19,326 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,326 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Brown
+2022-09-19 12:02:19,326 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,327 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:19,327 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,327 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#2]
+2022-09-19 12:02:19,327 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#3]
+2022-09-19 12:02:19,328 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Curt
+2022-09-19 12:02:19,328 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,328 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Cobain
+2022-09-19 12:02:19,328 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,328 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:19,329 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,329 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#3]
+2022-09-19 12:02:19,329 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#4]
+2022-09-19 12:02:19,329 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Nina
+2022-09-19 12:02:19,329 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,330 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Hagen
+2022-09-19 12:02:19,330 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,330 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mrs
+2022-09-19 12:02:19,330 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,331 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#4]
+2022-09-19 12:02:19,331 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#5]
+2022-09-19 12:02:19,331 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Jimmi
+2022-09-19 12:02:19,331 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,331 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Henrix
+2022-09-19 12:02:19,332 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,332 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:19,332 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,332 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#5]
+2022-09-19 12:02:19,332 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#6]
+2022-09-19 12:02:19,333 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Janis
+2022-09-19 12:02:19,333 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,333 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Joplin
+2022-09-19 12:02:19,333 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,333 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mrs
+2022-09-19 12:02:19,334 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,334 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#6]
+2022-09-19 12:02:19,334 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#7]
+2022-09-19 12:02:19,334 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Joe
+2022-09-19 12:02:19,335 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,335 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Cocker
+2022-09-19 12:02:19,335 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,335 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:19,336 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,336 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#7]
+2022-09-19 12:02:19,336 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#8]
+2022-09-19 12:02:19,336 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Alice
+2022-09-19 12:02:19,336 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,337 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Cooper
+2022-09-19 12:02:19,337 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,337 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:19,338 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,339 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#8]
+2022-09-19 12:02:19,339 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#9]
+2022-09-19 12:02:19,340 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Bruce
+2022-09-19 12:02:19,340 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,341 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Springsteen
+2022-09-19 12:02:19,341 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,341 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:19,341 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,342 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#9]
+2022-09-19 12:02:19,342 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#10]
+2022-09-19 12:02:19,342 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Eric
+2022-09-19 12:02:19,342 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,343 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Clapton
+2022-09-19 12:02:19,343 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,343 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:19,343 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:19,343 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#10]
+2022-09-19 12:02:19,344 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.res.jdb.int.LogicalConnectionManagedImpl] (executor-thread-0) Initiating JDBC connection release from afterTransaction
+2022-09-19 12:02:19,344 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2022-09-19 12:02:19,344 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2022-09-19 12:02:19,344 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2022-09-19 12:02:19,345 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2022-09-19 12:02:19,345 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2022-09-19 12:02:19,345 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2022-09-19 12:02:19,345 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2022-09-19 12:02:19,345 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+2022-09-19 12:02:21,867 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) RESTEASY002315: PathInfo: /Person
+2022-09-19 12:02:21,868 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.acme] (executor-thread-0) Le getAll marche
+2022-09-19 12:02:21,868 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.res.jdb.int.LogicalConnectionManagedImpl] (executor-thread-0) `hibernate.connection.provider_disables_autocommit` was enabled.  This setting should only be enabled when you are certain that the Connections given to Hibernate by the ConnectionProvider have auto-commit disabled.  Enabling this setting when the Connections do not have auto-commit disabled will lead to Hibernate executing SQL operations outside of any JDBC/SQL transaction.
+2022-09-19 12:02:21,868 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (executor-thread-0) select person0_.id as id1_0_, person0_.first_name as first_na2_0_, person0_.last_name as last_nam3_0_, person0_.salutation as salutati4_0_ from Person person0_ order by person0_.id
+2022-09-19 12:02:21,869 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 0
+2022-09-19 12:02:21,869 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#1]
+2022-09-19 12:02:21,869 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 1
+2022-09-19 12:02:21,869 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#2]
+2022-09-19 12:02:21,870 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 2
+2022-09-19 12:02:21,870 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#3]
+2022-09-19 12:02:21,870 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 3
+2022-09-19 12:02:21,871 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#4]
+2022-09-19 12:02:21,871 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 4
+2022-09-19 12:02:21,872 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#5]
+2022-09-19 12:02:21,872 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 5
+2022-09-19 12:02:21,873 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#6]
+2022-09-19 12:02:21,873 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 6
+2022-09-19 12:02:21,874 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#7]
+2022-09-19 12:02:21,874 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 7
+2022-09-19 12:02:21,875 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#8]
+2022-09-19 12:02:21,875 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 8
+2022-09-19 12:02:21,875 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#9]
+2022-09-19 12:02:21,876 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 9
+2022-09-19 12:02:21,876 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#10]
+2022-09-19 12:02:21,876 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#1]
+2022-09-19 12:02:21,876 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Doro
+2022-09-19 12:02:21,877 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,877 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Pesch
+2022-09-19 12:02:21,877 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,877 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mrs
+2022-09-19 12:02:21,877 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,878 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#1]
+2022-09-19 12:02:21,878 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#2]
+2022-09-19 12:02:21,878 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Bobby
+2022-09-19 12:02:21,878 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,878 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Brown
+2022-09-19 12:02:21,879 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,879 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:21,879 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,879 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#2]
+2022-09-19 12:02:21,879 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#3]
+2022-09-19 12:02:21,880 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Curt
+2022-09-19 12:02:21,880 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,880 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Cobain
+2022-09-19 12:02:21,880 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,880 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:21,881 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,881 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#3]
+2022-09-19 12:02:21,881 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#4]
+2022-09-19 12:02:21,881 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Nina
+2022-09-19 12:02:21,881 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,882 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Hagen
+2022-09-19 12:02:21,882 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,882 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mrs
+2022-09-19 12:02:21,882 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,883 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#4]
+2022-09-19 12:02:21,883 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#5]
+2022-09-19 12:02:21,883 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Jimmi
+2022-09-19 12:02:21,883 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,883 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Henrix
+2022-09-19 12:02:21,884 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,884 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:21,884 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,884 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#5]
+2022-09-19 12:02:21,884 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#6]
+2022-09-19 12:02:21,885 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Janis
+2022-09-19 12:02:21,885 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,885 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Joplin
+2022-09-19 12:02:21,885 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,885 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mrs
+2022-09-19 12:02:21,886 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,886 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#6]
+2022-09-19 12:02:21,886 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#7]
+2022-09-19 12:02:21,886 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Joe
+2022-09-19 12:02:21,886 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,887 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Cocker
+2022-09-19 12:02:21,887 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,887 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:21,888 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,888 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#7]
+2022-09-19 12:02:21,889 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#8]
+2022-09-19 12:02:21,889 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Alice
+2022-09-19 12:02:21,889 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,890 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Cooper
+2022-09-19 12:02:21,891 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,892 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:21,895 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,895 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#8]
+2022-09-19 12:02:21,900 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#9]
+2022-09-19 12:02:21,900 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Bruce
+2022-09-19 12:02:21,901 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,901 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Springsteen
+2022-09-19 12:02:21,901 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,901 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:21,902 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,902 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#9]
+2022-09-19 12:02:21,902 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#10]
+2022-09-19 12:02:21,902 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Eric
+2022-09-19 12:02:21,902 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,903 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Clapton
+2022-09-19 12:02:21,903 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,903 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:21,904 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:21,904 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#10]
+2022-09-19 12:02:21,905 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.res.jdb.int.LogicalConnectionManagedImpl] (executor-thread-0) Initiating JDBC connection release from afterTransaction
+2022-09-19 12:02:21,906 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2022-09-19 12:02:21,907 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2022-09-19 12:02:21,907 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2022-09-19 12:02:21,908 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2022-09-19 12:02:21,908 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2022-09-19 12:02:21,908 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2022-09-19 12:02:21,909 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2022-09-19 12:02:21,909 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+2022-09-19 12:02:22,679 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) RESTEASY002315: PathInfo: /Person
+2022-09-19 12:02:22,680 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.acme] (executor-thread-0) Le getAll marche
+2022-09-19 12:02:22,681 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.res.jdb.int.LogicalConnectionManagedImpl] (executor-thread-0) `hibernate.connection.provider_disables_autocommit` was enabled.  This setting should only be enabled when you are certain that the Connections given to Hibernate by the ConnectionProvider have auto-commit disabled.  Enabling this setting when the Connections do not have auto-commit disabled will lead to Hibernate executing SQL operations outside of any JDBC/SQL transaction.
+2022-09-19 12:02:22,681 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.SQL] (executor-thread-0) select person0_.id as id1_0_, person0_.first_name as first_na2_0_, person0_.last_name as last_nam3_0_, person0_.salutation as salutati4_0_ from Person person0_ order by person0_.id
+2022-09-19 12:02:22,682 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 0
+2022-09-19 12:02:22,682 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#1]
+2022-09-19 12:02:22,683 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 1
+2022-09-19 12:02:22,683 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#2]
+2022-09-19 12:02:22,684 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 2
+2022-09-19 12:02:22,684 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#3]
+2022-09-19 12:02:22,686 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 3
+2022-09-19 12:02:22,687 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#4]
+2022-09-19 12:02:22,688 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 4
+2022-09-19 12:02:22,691 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#5]
+2022-09-19 12:02:22,692 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 5
+2022-09-19 12:02:22,692 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#6]
+2022-09-19 12:02:22,693 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 6
+2022-09-19 12:02:22,693 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#7]
+2022-09-19 12:02:22,694 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 7
+2022-09-19 12:02:22,694 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#8]
+2022-09-19 12:02:22,695 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 8
+2022-09-19 12:02:22,695 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#9]
+2022-09-19 12:02:22,695 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result set row: 9
+2022-09-19 12:02:22,696 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.loa.Loader] (executor-thread-0) Result row: EntityKey[org.acme.Person#10]
+2022-09-19 12:02:22,696 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#1]
+2022-09-19 12:02:22,697 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Doro
+2022-09-19 12:02:22,697 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,698 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Pesch
+2022-09-19 12:02:22,698 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,698 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mrs
+2022-09-19 12:02:22,699 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,699 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#1]
+2022-09-19 12:02:22,699 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#2]
+2022-09-19 12:02:22,700 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Bobby
+2022-09-19 12:02:22,701 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,701 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Brown
+2022-09-19 12:02:22,701 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,702 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:22,702 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,702 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#2]
+2022-09-19 12:02:22,703 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#3]
+2022-09-19 12:02:22,703 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Curt
+2022-09-19 12:02:22,703 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,704 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Cobain
+2022-09-19 12:02:22,704 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,705 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:22,705 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,706 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#3]
+2022-09-19 12:02:22,706 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#4]
+2022-09-19 12:02:22,707 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Nina
+2022-09-19 12:02:22,707 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,707 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Hagen
+2022-09-19 12:02:22,708 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,708 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mrs
+2022-09-19 12:02:22,709 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,709 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#4]
+2022-09-19 12:02:22,710 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#5]
+2022-09-19 12:02:22,710 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Jimmi
+2022-09-19 12:02:22,710 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,710 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Henrix
+2022-09-19 12:02:22,711 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,711 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:22,711 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,712 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#5]
+2022-09-19 12:02:22,712 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#6]
+2022-09-19 12:02:22,712 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Janis
+2022-09-19 12:02:22,712 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,713 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Joplin
+2022-09-19 12:02:22,713 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,713 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mrs
+2022-09-19 12:02:22,714 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,714 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#6]
+2022-09-19 12:02:22,714 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#7]
+2022-09-19 12:02:22,714 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Joe
+2022-09-19 12:02:22,715 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,715 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Cocker
+2022-09-19 12:02:22,715 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,716 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:22,717 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,717 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#7]
+2022-09-19 12:02:22,718 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#8]
+2022-09-19 12:02:22,718 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Alice
+2022-09-19 12:02:22,718 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,719 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Cooper
+2022-09-19 12:02:22,719 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,719 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:22,720 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,720 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#8]
+2022-09-19 12:02:22,720 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#9]
+2022-09-19 12:02:22,720 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Bruce
+2022-09-19 12:02:22,721 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,721 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Springsteen
+2022-09-19 12:02:22,722 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,722 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:22,723 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,723 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#9]
+2022-09-19 12:02:22,724 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Resolving attributes for [org.acme.Person#10]
+2022-09-19 12:02:22,724 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `firstName` : value = Eric
+2022-09-19 12:02:22,724 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,725 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `lastName` : value = Clapton
+2022-09-19 12:02:22,725 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,725 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Processing attribute `salutation` : value = Mr
+2022-09-19 12:02:22,726 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Attribute (`salutation`)  - enhanced for lazy-loading? - false
+2022-09-19 12:02:22,726 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.eng.int.TwoPhaseLoad] (executor-thread-0) Done materializing entity [org.acme.Person#10]
+2022-09-19 12:02:22,727 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.res.jdb.int.LogicalConnectionManagedImpl] (executor-thread-0) Initiating JDBC connection release from afterTransaction
+2022-09-19 12:02:22,727 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2022-09-19 12:02:22,728 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2022-09-19 12:02:22,728 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2022-09-19 12:02:22,728 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2022-09-19 12:02:22,729 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2022-09-19 12:02:22,729 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2022-09-19 12:02:22,729 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2022-09-19 12:02:22,730 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.jbo.res.res.i18n] (executor-thread-0) Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+2022-09-19 12:02:49,324 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.run.Application] (Shutdown thread) Stopping application
+2022-09-19 12:02:49,325 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.run.shu.ShutdownRecorder] (Shutdown thread) Attempting to gracefully shutdown.
+2022-09-19 12:02:49,340 lylap2242 code-with-quarkus-dev.jar[39292] FINE  [org.aes.rea.ter.uti.ShutdownHooks] (Console Shutdown Hook) Removing shutdown-hook: 
+2022-09-19 12:02:49,358 lylap2242 code-with-quarkus-dev.jar[39292] WARNING [org.aes.rea.ter.imp.AbstractWindowsTerminal] (Quarkus Main Thread) Failed to write out.
+2022-09-19 12:02:49,324 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.run.Application] (Quarkus Main Thread) Stopping application
+2022-09-19 12:02:49,375 lylap2242 code-with-quarkus-dev.jar[39292] WARNING [org.aes.rea.ter.imp.AbstractWindowsTerminal] (Aesh Shutdown Hook) Failed to write out.
+2022-09-19 12:02:49,361 lylap2242 code-with-quarkus-dev.jar[39292] FINE  [org.aes.rea.ter.uti.ShutdownHooks] (Aesh Shutdown Hook) Running all shutdown-hook tasks
+2022-09-19 12:02:49,385 lylap2242 code-with-quarkus-dev.jar[39292] WARNING [org.aes.rea.ter.imp.AbstractWindowsTerminal] (Shutdown thread) Failed to write out.
+2022-09-19 12:02:49,385 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.int.SessionFactoryImpl] (Shutdown thread) HHH000031: Closing
+2022-09-19 12:02:49,385 lylap2242 code-with-quarkus-dev.jar[39292] WARNING [org.aes.rea.ter.imp.AbstractWindowsTerminal] (Shutdown thread) Failed to write out.
+2022-09-19 12:02:49,385 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.typ.spi.TypeConfiguration$Scope] (Shutdown thread) Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@68d8e673] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@4245614]
+2022-09-19 12:02:49,385 lylap2242 code-with-quarkus-dev.jar[39292] WARNING [org.aes.rea.ter.imp.AbstractWindowsTerminal] (Shutdown thread) Failed to write out.
+2022-09-19 12:02:49,385 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.ser.int.AbstractServiceRegistryImpl] (Shutdown thread) Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2022-09-19 12:02:49,385 lylap2242 code-with-quarkus-dev.jar[39292] WARNING [org.aes.rea.ter.imp.AbstractWindowsTerminal] (Shutdown thread) Failed to write out.
+2022-09-19 12:02:49,385 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.inf.qua.hib.cac.QuarkusInfinispanRegionFactory] (Shutdown thread) Stop region factory
+2022-09-19 12:02:49,385 lylap2242 code-with-quarkus-dev.jar[39292] WARNING [org.aes.rea.ter.imp.AbstractWindowsTerminal] (Shutdown thread) Failed to write out.
+2022-09-19 12:02:49,385 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.inf.qua.hib.cac.QuarkusInfinispanRegionFactory] (Shutdown thread) Clear region references
+2022-09-19 12:02:49,386 lylap2242 code-with-quarkus-dev.jar[39292] WARNING [org.aes.rea.ter.imp.AbstractWindowsTerminal] (Shutdown thread) Failed to write out.
+2022-09-19 12:02:49,386 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.boo.reg.int.BootstrapServiceRegistryImpl] (Shutdown thread) Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2022-09-19 12:02:49,387 lylap2242 code-with-quarkus-dev.jar[39292] WARNING [org.aes.rea.ter.imp.AbstractWindowsTerminal] (Shutdown thread) Failed to write out.
+2022-09-19 12:02:49,387 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [org.hib.orm.beans] (Shutdown thread) HHH10005004: Stopping BeanContainer : io.quarkus.hibernate.orm.runtime.cdi.QuarkusArcBeanContainer_Subclass@7d1fc3c6
+2022-09-19 12:02:49,388 lylap2242 code-with-quarkus-dev.jar[39292] WARNING [org.aes.rea.ter.imp.AbstractWindowsTerminal] (Shutdown thread) Failed to write out.
+2022-09-19 12:02:49,388 lylap2242 code-with-quarkus-dev.jar[39292] DEBUG [io.qua.arc.impl] (Shutdown thread) ArC DI container shut down
+2022-09-19 12:02:49,388 lylap2242 code-with-quarkus-dev.jar[39292] WARNING [org.aes.rea.ter.imp.AbstractWindowsTerminal] (Shutdown thread) Failed to write out.
+2022-09-19 12:02:49,388 lylap2242 code-with-quarkus-dev.jar[39292] INFO  [io.quarkus] (Shutdown thread) code-with-quarkus stopped in 0.063s

@@ -1,7 +1,10 @@
 package org.acme;
 
 
+import java.io.Console;
 import java.util.List;
+
+
 import javax.ws.rs.Produces;
 import javax.ws.rs.WebApplicationException;
 import javax.transaction.Transactional;
@@ -15,6 +18,10 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import com.arjuna.ats.internal.jdbc.drivers.modifiers.list;
+
+import org.hibernate.jdbc.Expectation;
+import org.jboss.logging.Logger;
 import org.jboss.resteasy.annotations.jaxrs.PathParam;
 
 import io.quarkus.panache.common.Sort;
@@ -26,21 +33,31 @@ import io.quarkus.panache.common.Sort;
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
 public class PersonResource {
+    private static final Logger LOGGER = Logger.getLogger(PersonResource.class);
 
     @GET
-    public List<Person> getAL() throws Exception{
-        return Person.findAll(Sort.ascending("last_name")).list();
+    public List<Person> getAll() {
+        
+        LOGGER.info("Le getAll marche");
+        return Person.findAll(Sort.ascending("id")).list(); 
+        
+           
     }
 
-
+  
     @POST
     @Transactional
-    public Response create(Person p){
+    public Response create(Person p, Expectation e){
+
+       
 
         if (p == null || p.id != null)
-            throw new WebApplicationException("id != null");
-        p.persist();
-        return Response.ok(p).status(200).build();
+            LOGGER.error(" error POST : " + e );
+            p.persist();
+            return Response.ok(p).status(200).build();
+        
+
+       
 
     }
 
@@ -50,7 +67,7 @@ public class PersonResource {
     public Person update(@PathParam Long id, Person p){
         Person entity = Person.findById(id);
         if(entity == null){
-            throw  new WebApplicationException("la personne avec cet id : "+id+" n'existe pas");
+            throw  new WebApplicationException("la personne avec cet id : "+ id +" n'existe pas");
         }
             if (p.salutation != null) entity.salutation = p.salutation;
             if (p.firstName != null) entity.firstName = p.firstName;
@@ -61,18 +78,24 @@ public class PersonResource {
          
     
 
-
     @DELETE
     @Path("{id}")
     @Transactional
     public Response delete(@PathParam Long id) {
-        Person entity = Person.findById(id);
+       
+    
+   
+         Person entity = Person.findById(id);
         if (entity == null) {
-            throw new WebApplicationException("La personne avec cet " + id + " n'existe pas.", 404);
+            LOGGER.error("error");
         }
         entity.delete();
+        LOGGER.info("DELETE OK !");
         return Response.status(204).build();
-    }
+    
+        
+  
 
 
+}
 }
