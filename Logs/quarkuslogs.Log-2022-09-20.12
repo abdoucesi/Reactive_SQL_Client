@@ -1,0 +1,8 @@
+17:39:02 INFO  [io.quarkus]] (Quarkus Main Thread) code-with-quarkus 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.12.2.Final) started in 0.317s. Listening on: http://localhost:8080
+17:39:02 INFO  [io.quarkus]] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+17:39:02 INFO  [io.quarkus]] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, jdbc-h2, jdbc-postgresql, narayana-jta, reactive-pg-client, resteasy, resteasy-jackson, resteasy-mutiny, smallrye-context-propagation, vertx]
+17:39:02 INFO  [io.qu.de.de.RuntimeUpdatesProcessor]] (vert.x-worker-thread-0) Live reload total time: 0.413s 
+17:39:02 INFO  [or.ac.PersonResource]] (executor-thread-0) Le getAll marche
+17:42:35 WARNING [or.ae.re.te.im.AbstractWindowsTerminal]] (Console Shutdown Hook) Failed to write out.
+17:42:35 WARNING [or.ae.re.te.im.AbstractWindowsTerminal]] (Quarkus Main Thread) Failed to write out.
+17:42:35 INFO  [io.quarkus]] (Quarkus Main Thread) code-with-quarkus stopped in 0.008s

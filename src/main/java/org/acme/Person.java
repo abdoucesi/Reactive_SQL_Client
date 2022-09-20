@@ -19,8 +19,12 @@ public class Person extends PanacheEntity {
     public String salutation;
 
 
-    public String getName (){
+    String getName (){
         return this.lastName;
+    }
+
+    String getFirstName (){
+        return this.firstName;
     }
 
 

@@ -4,13 +4,12 @@ package org.acme;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
+
 import java.util.List;
+import java.util.stream.Collectors;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.reflect.Array;
-import java.nio.file.Files;
+
 
 
 import javax.ws.rs.Produces;
@@ -51,26 +50,16 @@ public class PersonResource {
         LOGGER.info("Le getAll marche");
 
         List<Person> allPersons = Person.listAll();
-        
-        
-        for (int i = 0 ; i< allPersons.size(); i++){
-
-            List<String> Names = new ArrayList<>();
-
-            Names.add(allPersons.get(i).firstName);
-
-            FileWriter writer = new FileWriter("C:/Users/hamicheab/Documents/output.txt"); 
-            
-            for(String str: Names) {
-                writer.write(str + System.lineSeparator());
-            }
-            writer.close();
-            
-            System.out.print(Names);
-        }
 
         
 
+        List<String> names = allPersons.stream().map(p -> p.firstName)
+            .filter( s-> s.contains("i"))
+            .collect(Collectors.toList());
+        
+        
+
+        System.out.println(names);
         
         return allPersons;
         
